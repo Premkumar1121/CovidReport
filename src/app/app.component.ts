@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DynamicComponent } from "./dynamic/dynamic.component";
 import { TitleComponent } from "./title/title.component";
-import { ChartComponent } from "./chart/chart.component";
 
 @Component({
   selector: 'app-root',
-  imports: [TitleComponent, ChartComponent],
+  imports: [DynamicComponent, TitleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
